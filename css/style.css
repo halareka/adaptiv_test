@@ -333,6 +333,9 @@ body {
   .header__image > img {
     width: 200px;
   }
+  .logo{
+    font-size: 27px;
+  }
   .header {
     background: url("../images/header_background.png"),cover no-repeat;
     background-position: -140px;
