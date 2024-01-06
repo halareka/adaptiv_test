@@ -314,23 +314,27 @@ body {
   margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .header {
+    width: 320px;
+  }
+  .header__nav {
     width: 100%;
+    margin-left: 20px;
   }
   img{
-    width: 320px;
+    width: 240px;
   }
   .header {
     background: url("../images/header_background.png"),cover no-repeat;
-    background-position: -200px;
-    background-size: 900px;
+    background-position: -240px;
+    background-size: 800px;
   }
-  .header__search {
-    width: 150px;
+  .header__search{
+    width: 100px;
     background: transparent;
   }
   .header__search-input{
-    opacity: 0;
+    display: none;
   } 
 } 
