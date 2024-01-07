@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 .header {
-  background: url("../images/header_background.png"), lightgray 50%/cover no-repeat;
+  background: url("../images/header_background.webp"), #03070a 50%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .header__nav {
   display: flex;
@@ -289,6 +291,15 @@
   color: var(--color_second, #E11E18);
 }
 
+:root {
+  --txt_color_second: #FFF;
+  --color_second: #E11E18;
+  --txt_color_main: #000;
+  --color_main: #2CA7CB;
+  --txt_color-on-btn: #666;
+  --stroke_mini_photo: #2CA7CB;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -312,23 +323,22 @@ body {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-}/*# sourceMappingURL=style.css.map */
-
+}
 @media screen and (max-width: 480px) {
+  /* хеадер */
   .header {
     width: 100%;
     height: 230px;
   }
-  .container{
-    height: 230px;
-  }
   .header__nav {
     width: 100%;
-    padding-left: 20px;
+    padding-left: 10%;
+    align-items: center ;
     white-space: nowrap;
+    padding-top: 20px;
   }
   .header__image{
-    margin-top: -80px;
+    margin-top: -65px;
   }
   .header__image > img {
     width: 200px;
@@ -337,8 +347,7 @@ body {
     font-size: 27px;
   }
   .header {
-    background: url("../images/header_background.png"),cover no-repeat;
-    background-position: -140px;
+    background-position: 50%;
     background-size: 600px;
   }
   .header__search{
@@ -348,4 +357,58 @@ body {
   .header__search-input{
     display: none;
   } 
+  /* батончики */
+  .main__filter {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  .main__filter-btn {
+    padding: 9px 0px 34px;
+    width: 70%;
+    height: 0px;
+    font-size: 4vw;
+  }
+  .main__filter{
+    gap: 10px;
+  }  
+  .main {
+    padding: 35px 0 123px 0;
+  }
+  .item__btns{
+    width: 100%;
+  }
+  .item__btns-btn {
+    width: 40%;   
+    font-size: 4.5vw;
+  }
+  /* глав-контент */
+  .main__item{
+    align-items: center;
+  }
+  .main__item-img {
+    width: 100%;
+  }
+  .main__item-title {
+    font-size: 4vw;
+    width: 100%;
+  }
+  .main__content {
+    margin: 0 auto;
+    width: 70%;
+    gap: 20px 0px;
+    padding: 40px 0 0 0;
+  }
+  /* футер */
+  .show-more-btns {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 25px;
+  }
+  .show-more-btns_showmore {
+    font-size: 20px;
+    width: 65%;
+}
 } 
+
