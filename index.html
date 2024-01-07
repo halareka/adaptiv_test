@@ -5,36 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./images/cars_logo.webp" type="image/x-icon" />
     <title>Cars. Fan site</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <nav class="header__nav">
+        <!-- <nav class="header__nav">
           <a href="/Cars-Fun-Site/" class="header__nav-logo logo"
             >Cars. <span>Fan site</span></a
           >
           <div class="header__search">
             <img src="./images/search.svg" alt="search" />
-            <input type="search" name="" id="" class="header__search-input" />
+            <input
+              type="search"
+              name="searchQuery"
+              id="searchInput"
+              class="header__search-input"
+            />
           </div>
-        </nav>
+        </nav> -->
         <div class="header__image">
-          <img src="./images/header_McQueen.png" alt="McQueen image" />
+          <img src="./images/header_McQueen.webp" alt="McQueen image" />
         </div>
       </div>
     </header>
-    <!-- <main class="main">
+    <main class="main">
       <div class="container">
         <div class="main__filter">
-          <button class="main__filter-btn active">Racers</button>
-          <button class="main__filter-btn">Other characters</button>
-          <button class="main__filter-btn">All</button>
+          <button class="main__filter-btn active" id="btn-racers">
+            Racers
+          </button>
+          <button class="main__filter-btn" id="btn-other">
+            Other characters
+          </button>
+          <button class="main__filter-btn" id="btn-all">All</button>
         </div>
         <div class="main__content">
           <div class="main__item">
             <img
-              src="./images/main_item_1.png"
+              src="./images/main_item_1.webp"
               alt="car image"
               class="main__item-img"
             />
@@ -42,13 +52,18 @@
               Lightning McQueen <span>#95</span>
             </div>
             <div class="item__btns">
-              <button class="item__btns-btn">photo</button>
-              <button class="item__btns-btn">Specifications</button>
+              <button class="item__btns-btn btn-photo">Photo</button>
+              <a
+                href="./pages/car_info.html"
+                class="item__btns-btn btn-specifications"
+              >
+                Specifications
+              </a>
             </div>
           </div>
           <div class="main__item">
             <img
-              src="./images/main_item_1.png"
+              src="./images/main_item_1.webp"
               alt="car image"
               class="main__item-img"
             />
@@ -56,13 +71,18 @@
               Lightning McQueen <span>#95</span>
             </div>
             <div class="item__btns">
-              <button class="item__btns-btn">photo</button>
-              <button class="item__btns-btn">Specifications</button>
+              <button class="item__btns-btn btn-photo">Photo</button>
+              <a
+                href="./pages/car_info.html"
+                class="item__btns-btn btn-specifications"
+              >
+                Specifications
+              </a>
             </div>
           </div>
           <div class="main__item">
             <img
-              src="./images/main_item_1.png"
+              src="./images/main_item_1.webp"
               alt="car image"
               class="main__item-img"
             />
@@ -70,25 +90,35 @@
               Lightning McQueen <span>#95</span>
             </div>
             <div class="item__btns">
-              <button class="item__btns-btn">photo</button>
-              <button class="item__btns-btn">Specifications</button>
+              <button class="item__btns-btn btn-photo">Photo</button>
+              <a
+                href="./pages/car_info.html"
+                class="item__btns-btn btn-specifications"
+              >
+                Specifications
+              </a>
             </div>
           </div>
           <div class="main__item">
             <img
-              src="./images/main_item_2.png"
+              src="./images/main_item_2.webp"
               alt="car image"
               class="main__item-img"
             />
             <div class="main__item-title">Cruz Ramirez <span>~</span></div>
             <div class="item__btns">
-              <button class="item__btns-btn">photo</button>
-              <button class="item__btns-btn">Specifications</button>
+              <button class="item__btns-btn btn-photo">Photo</button>
+              <a
+                href="./pages/car_info.html"
+                class="item__btns-btn btn-specifications"
+              >
+                Specifications
+              </a>
             </div>
           </div>
           <div class="main__item">
             <img
-              src="./images/main_item_1.png"
+              src="./images/main_item_1.webp"
               alt="car image"
               class="main__item-img"
             />
@@ -96,13 +126,18 @@
               Lightning McQueen <span>#95</span>
             </div>
             <div class="item__btns">
-              <button class="item__btns-btn">photo</button>
-              <button class="item__btns-btn">Specifications</button>
+              <button class="item__btns-btn btn-photo">Photo</button>
+              <a
+                href="./pages/car_info.html"
+                class="item__btns-btn btn-specifications"
+              >
+                Specifications
+              </a>
             </div>
           </div>
           <div class="main__item">
             <img
-              src="./images/main_item_1.png"
+              src="./images/main_item_1.webp"
               alt="car image"
               class="main__item-img"
             />
@@ -110,13 +145,18 @@
               Lightning McQueen <span>#95</span>
             </div>
             <div class="item__btns">
-              <button class="item__btns-btn">photo</button>
-              <button class="item__btns-btn">Specifications</button>
+              <button class="item__btns-btn btn-photo">Photo</button>
+              <a
+                href="./pages/car_info.html"
+                class="item__btns-btn btn-specifications"
+              >
+                Specifications
+              </a>
             </div>
           </div>
           <div class="main__item">
             <img
-              src="./images/main_item_1.png"
+              src="./images/main_item_1.webp"
               alt="car image"
               class="main__item-img"
             />
@@ -124,13 +164,18 @@
               Lightning McQueen <span>#95</span>
             </div>
             <div class="item__btns">
-              <button class="item__btns-btn">photo</button>
-              <button class="item__btns-btn">Specifications</button>
+              <button class="item__btns-btn btn-photo">Photo</button>
+              <a
+                href="./pages/car_info.html"
+                class="item__btns-btn btn-specifications"
+              >
+                Specifications
+              </a>
             </div>
           </div>
           <div class="main__item">
             <img
-              src="./images/main_item_1.png"
+              src="./images/main_item_1.webp"
               alt="car image"
               class="main__item-img"
             />
@@ -138,14 +183,21 @@
               Lightning McQueen <span>#95</span>
             </div>
             <div class="item__btns">
-              <button class="item__btns-btn">photo</button>
-              <button class="item__btns-btn">Specifications</button>
+              <button class="item__btns-btn btn-photo">Photo</button>
+              <a
+                href="./pages/car_info.html"
+                class="item__btns-btn btn-specifications"
+              >
+                Specifications
+              </a>
             </div>
           </div>
         </div>
         <div class="show-more-btns">
-          <button class="show-more-btns_showmore">Show more...</button>
-          <button class="show-more-btns_up">
+          <button class="show-more-btns_showmore" id="btn-show-more">
+            Show more...
+          </button>
+          <button class="show-more-btns_up" id="btn-up">
             <img src="./images/up.svg" alt="arrow up" />
           </button>
         </div>
@@ -156,15 +208,17 @@
         <div class="footer__content">
           <div class="footer__logos">
             <a href="/Cars-Fun-Site/">
-              <img src="./images/cars_logo.png" alt="cars logo" />
+              <img src="./images/cars_logo.webp" alt="cars logo" />
             </a>
             <a href="/Cars-Fun-Site/" class="footer__logos-logo logo">
               Cars. <span>Fan site</span>
             </a>
           </div>
-          <div class="footer__company">frontGR. 2024</div>
+          <a href="https://github.com/frontgr" class="footer__company"
+            >frontGR. 2024</a
+          >
         </div>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
